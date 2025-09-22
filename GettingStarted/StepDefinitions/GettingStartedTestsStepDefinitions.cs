@@ -10,7 +10,7 @@ namespace GettingStarted.StepDefinitions
             _scenarioContext = scenarioContext;
         }
 
-        [When("I get value (.*)")]
+        [When(@"I get value (.*)")]
         public void WhenIGetValue(string value)
         {
             _scenarioContext.Set(value, "value");
